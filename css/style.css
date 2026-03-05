@@ -1,0 +1,65 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* contenedor principal */
+nav{
+    background:#ffe600;
+    padding:10px 40px;
+}
+
+/* primera fila */
+nav > div:first-child{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* logo */
+nav img{
+    height:40px;
+}
+
+/* buscador */
+nav input{
+    width:500px;
+    padding:10px;
+    border:none;
+    border-radius:4px 0 0 4px;
+}
+
+nav button{
+    padding:10px 15px;
+    border:none;
+    background:white;
+    cursor:pointer;
+}
+
+/* contenedor buscador */
+nav > div:first-child div:nth-child(2){
+    display:flex;
+}
+
+/* links usuario */
+nav span{
+    margin-right:10px;
+    font-weight:bold;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:10px;
+    font-size:14px;
+}
+
+/* segunda fila */
+nav > div:last-child{
+    margin-top:10px;
+}
+
+nav > div:last-child a{
+    margin-right:20px;
+    font-size:14px;
+}
