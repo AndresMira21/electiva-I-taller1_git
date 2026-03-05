@@ -1,0 +1,170 @@
+#dev-portfolios{
+padding:60px 20px;
+background:#ffffff;
+}
+
+#dev-portfolios .container{
+max-width:1200px;
+margin:auto;
+text-align:center;
+}
+
+#dev-portfolios h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+#dev-portfolios .team-subtitle{
+color:#666;
+margin-bottom:40px;
+}
+
+/* ============================================ */
+/* CARRUSEL */
+/* ============================================ */
+
+#dev-portfolios .carousel-container{
+position:relative;
+display:flex;
+align-items:center;
+}
+
+#dev-portfolios .carousel-wrapper{
+overflow:hidden;
+width:100%;
+}
+
+#dev-portfolios .carousel-track{
+display:flex;
+transition:transform 0.5s ease;
+gap:20px;
+}
+
+/* ============================================ */
+/* TARJETAS */
+/* ============================================ */
+
+#dev-portfolios .portfolio-card{
+min-width:300px;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+padding:20px;
+text-align:left;
+}
+
+#dev-portfolios .portfolio-header{
+text-align:center;
+margin-bottom:15px;
+}
+
+#dev-portfolios .portfolio-avatar{
+width:90px;
+height:90px;
+border-radius:50%;
+margin-bottom:10px;
+}
+
+#dev-portfolios .portfolio-name{
+font-size:20px;
+}
+
+#dev-portfolios .portfolio-role{
+color:#777;
+font-size:14px;
+}
+
+/* ============================================ */
+/* SERVICIOS */
+/* ============================================ */
+
+#dev-portfolios .portfolio-services ul{
+padding-left:18px;
+margin-top:8px;
+font-size:14px;
+}
+
+/* ============================================ */
+/* TECNOLOGIAS */
+/* ============================================ */
+
+#dev-portfolios .tech-tags{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-top:10px;
+}
+
+#dev-portfolios .tech-tag{
+background:#ffe600;
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
+}
+
+/* ============================================ */
+/* LINKS */
+/* ============================================ */
+
+#dev-portfolios .portfolio-links{
+margin-top:15px;
+display:flex;
+gap:10px;
+}
+
+#dev-portfolios .portfolio-link{
+text-decoration:none;
+padding:8px 12px;
+border-radius:6px;
+font-size:14px;
+color:white;
+}
+
+#dev-portfolios .github-link{
+background:#333;
+}
+
+#dev-portfolios .email-link{
+background:#007bff;
+}
+
+/* ============================================ */
+/* BOTONES CARRUSEL */
+/* ============================================ */
+
+#dev-portfolios .carousel-btn{
+background:#ffe600;
+border:none;
+font-size:30px;
+width:40px;
+height:40px;
+border-radius:50%;
+cursor:pointer;
+margin:10px;
+}
+
+#dev-portfolios .carousel-btn:hover{
+background:#ffd000;
+}
+
+/* ============================================ */
+/* INDICADORES */
+/* ============================================ */
+
+#dev-portfolios .carousel-indicators{
+margin-top:20px;
+}
+
+#dev-portfolios .indicator{
+display:inline-block;
+width:10px;
+height:10px;
+background:#ccc;
+border-radius:50%;
+margin:5px;
+cursor:pointer;
+}
+
+#dev-portfolios .indicator.active{
+background:#333;
+}
