@@ -1,13 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clon MercadoLibre — Buscador integrado</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
-    <script src="./js/script.js"></script>
+  <header>
+    <nav>
+      <!-- fila superior -->
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;flex:1;">
+          <div>
+            <img src="logo.png" alt="Logo">
+          </div>
+
+          <!-- barra de búsqueda global -->
+          <div style="flex:1;max-width:720px;">
+            <div style="display:flex;">
+              <input id="global-search" type="text" placeholder="Buscar productos, marcas y más..." aria-label="Buscar productos">
+              <button id="global-search-btn" aria-label="Buscar">🔍</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- usuario -->
+        <div style="display:flex;align-items:center;gap:10px">
+          <span>Iniciar sesión</span>
+          <a href="#">Mis compras</a>
+          <a href="#">Favoritos</a>
+          <a href="#" aria-label="Notificaciones">🔔</a>
+          <a href="#" aria-label="Carrito">🛒</a>
+        </div>
+      </div>
+
+      <!-- fila inferior -->
+      <div>
+        <a href="#">Categorías</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Cupones</a>
+        <a href="#">Supermercado</a>
+        <a href="#">Moda</a>
+        <a href="#">Vender</a>
+        <a href="#">Ayuda / PQR</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Componente product-search -->
+    <section id="product-search" aria-label="Buscador de productos">
+      <div class="search-wrapper" role="search">
+        <label for="search-input" class="visually-hidden">Buscar productos</label>
+        <input id="search-input" type="search"
+               placeholder="Buscar productos, marcas o categorías"
+               aria-autocomplete="list"
+               aria-controls="search-suggestions"
+               aria-expanded="false" />
+        <button id="search-btn" aria-label="Buscar">Buscar</button>
+      </div>
+
+      <ul id="search-suggestions" role="listbox" aria-label="Sugerencias de búsqueda" class="suggestions" hidden></ul>
+
+      <div id="search-results" class="results" aria-live="polite">
+        <!-- Productos filtrados se inyectan aquí -->
+      </div>
+
+      <nav id="search-pagination" class="pagination" aria-label="Paginación de resultados" hidden></nav>
+    </section>
+
+    <!-- Productos destacados (placeholder) -->
+    <section id="destacados" style="margin-top:24px;">
+      <h2>Productos destacados</h2>
+      <div class="grid-destacados">
+        <div class="card"><img src="https://via.placeholder.com/160x160?text=Dest1" alt="Destacado 1"><div class="meta"><h3>Producto destacado 1</h3><p class="muted">Descripción breve</p><p class="price">$199.00</p></div></div>
+        <div class="card"><img src="https://via.placeholder.com/160x160?text=Dest2" alt="Destacado 2"><div class="meta"><h3>Producto destacado 2</h3><p class="muted">Descripción breve</p><p class="price">$299.00</p></div></div>
+        <div class="card"><img src="https://via.placeholder.com/160x160?text=Dest3" alt="Destacado 3"><div class="meta"><h3>Producto destacado 3</h3><p class="muted">Descripción breve</p><p class="price">$399.00</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="padding:18px;text-align:center;color:#6b7280">
+    © 2026 Clon MercadoLibre — Proyecto Taller
+  </footer>
+
+  <script src="./js/script.js" defer></script>
 </body>
 </html>
