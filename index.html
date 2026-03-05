@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/portafolio.css">
 </head>
+
 <body>
   <header>
     <nav>
@@ -97,7 +98,7 @@
         <div class="container">
             <h2>Conoce a Nuestro Equipo de Desarrollo</h2>
             <p class="team-subtitle">Desarrolladores apasionados que hacen posible este proyecto</p>
-            
+
             <!-- Carrusel de Portafolios -->
             <div class="carousel-container">
                 <button class="carousel-btn prev-btn" onclick="moveCarousel(-1)">
@@ -106,20 +107,24 @@
 
                 <div class="carousel-wrapper">
                     <div class="carousel-track" id="carouselTrack">
-                        
+
                         <!-- ========================================== -->
                         <!-- PORTAFOLIO DESARROLLADOR 1 -->
                         <!-- ========================================== -->
                         <div class="portfolio-card">
                             <div class="portfolio-header">
-                                <img src="https://i.pravatar.cc/150?img=12" alt="Andres Miranda" class="portfolio-avatar">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="Andres Miranda"
+                                    class="portfolio-avatar">
                                 <h3 class="portfolio-name">Andres Miranda</h3>
                                 <p class="portfolio-role">Estudiante de ingenieria de Software
 
-                                    
+
                                 </p>
                             </div>
                             <p class="portfolio-description">
+                                Desarrollador apasionado por crear experiencias web excepcionales.
+                                Especializado en frontend moderno y arquitecturas escalables con más de 3 años de
+                                experiencia.
                                Estudiante de ingeniería de software buscando oportunidades para aplicar mis conocimientos en proyectos innovadores y desafiantes. 
                                Comprometido con el aprendizaje continuo y el desarrollo profesional y personal y crecer en un entorno dinámico y colaborativo. 
                                Desataco en mi posición para trabajar en equipo y mi capacidad de adaptarme a nuevos desafíos con empeño. 
@@ -147,6 +152,8 @@
                                 </div>
                             </div>
                             <div class="portfolio-links">
+                                <a href="https://github.com/juanperez" target="_blank"
+                                    class="portfolio-link github-link">
                                 <a href="https://github.com/AndresMira21" target="_blank" class="portfolio-link github-link">
                                     <span>🔗</span> GitHub
                                 </a>
@@ -155,7 +162,7 @@
                                 </a>
                             </div>
                         </div>
-                        
+
                         <!-- ========================================== -->
                         <!-- PORTAFOLIO DESARROLLADOR 2 -->
                         <!-- ========================================== -->
@@ -210,25 +217,65 @@
                         <!-- ========================================== -->
                         <!-- PORTAFOLIO DESARROLLADOR 3 -->
                         <!-- ========================================== -->
-                        
+                        <div class="portfolio-card">
+                            <div class="portfolio-header">
+                                <img src="https://i.pravatar.cc/150?img=32" alt="Daniel Mafla"
+                                    class="portfolio-avatar">
+                                <h3 class="portfolio-name">Daniel Mafla</h3>
+                                <p class="portfolio-role">Estudiante de ingenieria de Software</p>
+                            </div>
+                            <p class="portfolio-description">
+                                Me apasiona el desarrollo frontend y backend, y disfruto crear soluciones completas y funcionales.    
+                                Me encanta aprender cosas nuevas, explorar nuevas tecnologías y mejorar mis habilidades constantemente.
+                                Estoy emocionado por enfrentar nuevos retos y contribuir con proyectos innovadores que hagan la diferencia.
+                            </p>
+                            <div class="portfolio-services">
+                                <h4>📋 Servicios:</h4>
+                                <ul>
+                                    <li>Desarrollo Web Full Stack</li>
+                                    <li>Integración de APIs</li>
+                                    <li>Implementacion de base de datos</li>
+                                    <li>Diseño y optimización de interfaces UI/UX</li>
+                                </ul>
+                            </div>
+                            <div class="portfolio-tech">
+                                <h4>🛠️ Tecnologías:</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">java</span>
+                                    <span class="tech-tag">python</span>
+                                    <span class="tech-tag">git</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/DanielMafla230" target="_blank"
+                                    class="portfolio-link github-link">
+                                    <span>🔗</span> GitHub
+                                </a>
+                                <a href="danielmafla320@gmail.com" class="portfolio-link email-link">
+                                    <span>✉️</span> Email
+                                </a>
+                            </div>
+                        </div>
                         <!-- ========================================== -->
                         <!-- PORTAFOLIO DESARROLLADOR 4 -->
                         <!-- ========================================== -->
-                        
+
                     </div>
                 </div>
-                
+
                 <!-- Botón Siguiente -->
                 <button class="carousel-btn next-btn" onclick="moveCarousel(1)">
                     ›
                 </button>
             </div>
-            
+
             <!-- Indicadores del Carrusel -->
             <div class="carousel-indicators" id="carouselIndicators"></div>
-            
+
         </div>
     </section>
+
     <footer style="padding:18px;text-align:center;color:#6b7280">
     © 2026 Clon MercadoLibre — Proyecto Taller
   </footer>
